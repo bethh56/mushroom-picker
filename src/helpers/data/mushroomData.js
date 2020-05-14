@@ -161,3 +161,7 @@ const mushrooms = [
     isDeadly: false,
   },
 ];
+
+const getMushrooms = () => mushrooms;
+
+export default { getMushrooms };

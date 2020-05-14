@@ -19,7 +19,6 @@ class App extends React.Component {
     return (
       <div className="App">
         <h2>MUSHROOM PICKER</h2>
-        <button className="btn btn-danger">PICK A MUSHROOM</button>
         <Forest mushrooms={mushrooms}/>
       </div>
     );

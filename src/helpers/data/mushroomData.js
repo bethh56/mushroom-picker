@@ -166,6 +166,8 @@ const mushrooms = [
   },
 ];
 
+const getBasket = () => basket;
+
 const getMushrooms = () => mushrooms;
 
 const getBasketItems = () => {
@@ -173,6 +175,11 @@ const getBasketItems = () => {
   basket.push(pickRandomMushroom);
 };
 
-const getBasket = () => basket;
+// const mushroomPickedCases = () => {
+//   const mushroom = getMushrooms();
+//   if (mushroom.isPoisonous === true) {
+//     poisonousMushroom();
+//   }
+// }
 
 export default { getMushrooms, getBasketItems, getBasket };

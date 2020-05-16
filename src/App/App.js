@@ -28,10 +28,18 @@ class App extends React.Component {
     const { mushrooms, basketItems } = this.state;
     return (
       <div className="App">
-        <h2>MUSHROOM PICKER</h2>
+        <nav class="navbar navbar-dark bg-dark">
+        <span class="navbar-brand mb-0 h1">MUSHROOM PICKER</span>
+        </nav>
         <button className="btn btn-danger m-2 px-5" onClick={this.pickMushroomEvent}>PICK MUSHROOM</button>
+        <div className="row">
+        <div className="col-6">
         <Forest mushrooms={mushrooms}/>
+        </div>
+        <div className="col-6">
         <Basket basketItems={basketItems}/>
+        </div>
+      </div>
       </div>
     );
   }

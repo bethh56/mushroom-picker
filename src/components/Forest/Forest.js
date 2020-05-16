@@ -13,7 +13,7 @@ class Forest extends React.Component {
     return (
       <div>
         <h3>FOREST</h3>
-        <div className="d-flex flex-wrap mr-5 ml-5">
+        <div className="d-flex flex-wrap">
         {makeMushrooms}
         </div>
       </div>

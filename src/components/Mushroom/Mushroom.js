@@ -1,7 +1,6 @@
 import React from 'react';
 
 class Mushroom extends React.Component {
-
   render() {
     const { mushroom } = this.props;
     return (

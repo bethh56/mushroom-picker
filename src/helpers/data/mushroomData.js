@@ -1,3 +1,7 @@
+import Basket from "../../components/Basket/Basket";
+
+let basket = [];
+
 /* eslint-disable max-len */
 const mushrooms = [
   {
@@ -164,6 +168,11 @@ const mushrooms = [
 
 const getMushrooms = () => mushrooms;
 
-const getBasketItems = () => mushrooms;
+const getBasketItems = () => {
+  const pickRandomMushroom = mushrooms[Math.floor(Math.random() * mushrooms.length)];
+  basket.push(pickRandomMushroom);
+};
 
-export default { getMushrooms, getBasketItems };
+const getBasket = () => basket;
+
+export default { getMushrooms, getBasketItems, getBasket };

@@ -13,7 +13,7 @@ class App extends React.Component {
 
   componentDidMount() {
     const mushrooms = mushroomData.getMushrooms();
-    const basketItems = mushroomData.getMushrooms();
+    const basketItems = mushroomData.getBasketItems();
     this.setState({ mushrooms, basketItems });
   }
 

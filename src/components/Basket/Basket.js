@@ -5,14 +5,11 @@ import Mushroom from '../Mushroom/Mushroom';
 class Basket extends React.Component {
   render() {
     const { basketItems } = this.props;
-    const makeBasket = basketItems.map((item) => (
-      <Mushroom key={item.id} mushroom={item}/>
-    ));
     return (
       <div>
-        <h3>BASKET</h3>
+        <h3 className="mt-5 mb-3">BASKET</h3>
         <div className="d-flex flex-wrap mr-5 ml-5">
-          {makeBasket}
+          <Mushroom key={basketItems.id} mushroom={basketItems}/>
         </div>
       </div>
     );

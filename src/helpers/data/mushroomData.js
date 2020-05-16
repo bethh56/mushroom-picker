@@ -164,6 +164,6 @@ const mushrooms = [
 
 const getMushrooms = () => mushrooms;
 
-const getBasketItems = () => mushrooms;
+const getBasketItems = () => mushrooms[Math.floor(Math.random() * mushrooms.length)];
 
 export default { getMushrooms, getBasketItems };

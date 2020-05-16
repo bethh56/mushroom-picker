@@ -9,6 +9,7 @@ class App extends React.Component {
   state = {
     mushrooms: [],
     basketItems: [],
+    pickedMushroom: {},
   }
 
   componentDidMount() {
@@ -17,13 +18,27 @@ class App extends React.Component {
     this.setState({ mushrooms, basketItems });
   }
 
+  pickMushroomEvent = (e) => {
+    const { mushrooms } = this.state;
+    const randomIndex = Math.floor(Math.random() * mushrooms.length);
+    const pickedMushroom = mushrooms[randomIndex];
+    this.setState({ pickedMushroom });
+  }
+
+  pickAMushroom = (mushroomId) => {
+    mushroomData.getBasketItems(mushroomId);
+    const mushrooms = mushroomData.getMushrooms;
+    this.setState({ mushrooms });
+  }
+
   render() {
-    const { mushrooms, basketItems } = this.state;
+    const { mushrooms, pickedMushroom } = this.state;
     return (
       <div className="App">
         <h2>MUSHROOM PICKER</h2>
+        <button className="btn btn-danger m-2 px-5" onClick={this.pickMushroomEvent}>PICK MUSHROOM</button>
         <Forest mushrooms={mushrooms}/>
-        <Basket basketItems={basketItems}/>
+        <Basket basketItems={pickedMushroom}/>
       </div>
     );
   }

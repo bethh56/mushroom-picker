@@ -1,5 +1,3 @@
-import Basket from "../../components/Basket/Basket";
-
 let basket = [];
 
 /* eslint-disable max-len */
@@ -166,13 +164,45 @@ const mushrooms = [
   },
 ];
 
+const getBasket = () => basket;
+
 const getMushrooms = () => mushrooms;
+
+const poisonedMushroom = () => {
+  basket.pop();
+  basket.splice(Math.floor(Math.random() * basket.length), 2);
+  // eslint-disable-next-line no-alert
+  alert('You picked the Poisonous Mushroom! Oh no!');
+};
+
+const deadlyMushroom = () => {
+  basket.length = 0;
+  // eslint-disable-next-line no-alert
+  alert('You picked the Deadly Mushroom! You lost!');
+};
+
+const magicMushroom = () => {
+  basket.pop();
+  mushrooms.forEach((mushroom) => {
+    if (mushroom.isDeadly === false && mushroom.isPoisonous === false && mushroom.isMagic === false) {
+      basket.push(mushroom);
+    }
+  })
+  // eslint-disable-next-line no-alert
+  alert('You picked the Magic Mushroom! You Win!');
+};
 
 const getBasketItems = () => {
   const pickRandomMushroom = mushrooms[Math.floor(Math.random() * mushrooms.length)];
   basket.push(pickRandomMushroom);
+  if (pickRandomMushroom.isPoisonous === true) {
+    poisonedMushroom();
+  } else if (pickRandomMushroom.isDeadly === true) {
+    deadlyMushroom();
+  } else if (pickRandomMushroom.isMagic === true) {
+    magicMushroom();
+    console.error('magic!');
+  }
 };
-
-const getBasket = () => basket;
 
 export default { getMushrooms, getBasketItems, getBasket };

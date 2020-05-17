@@ -5,11 +5,9 @@ class Mushroom extends React.Component {
     const { mushroom } = this.props;
     return (
       <div className="col-4">
-      <div className="card">
+        <div className="card border-warning mb-3">
         <img className="card-img-top" src={mushroom.imgUrl} alt="Mushroom Card"/>
-        <div className="card-body">
-          <h6 className="card-text">{mushroom.name}</h6>
-        </div>
+          <p>{mushroom.name}</p>
       </div>
       </div>
     );

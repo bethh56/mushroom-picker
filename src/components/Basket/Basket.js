@@ -11,8 +11,8 @@ class Basket extends React.Component {
 
     return (
       <div>
-        <h3 className="mt-5 mb-3">BASKET</h3>
-        <div id="pickedMushroomBasket" className="d-flex flex-wrap mr-5 ml-5">
+        <h3>BASKET</h3>
+        <div id="pickedMushroomBasket" className="d-flex flex-wrap">
        {addMushrooms}
         </div>
       </div>

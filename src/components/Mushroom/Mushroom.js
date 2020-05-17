@@ -4,12 +4,10 @@ class Mushroom extends React.Component {
   render() {
     const { mushroom } = this.props;
     return (
-      <div className="col-6">
-      <div className="card">
+      <div className="col-4">
+        <div className="card border-warning mb-3">
         <img className="card-img-top" src={mushroom.imgUrl} alt="Mushroom Card"/>
-        <div className="card-body">
-          <p className="card-text">{mushroom.name}</p>
-        </div>
+          <p>{mushroom.name}</p>
       </div>
       </div>
     );

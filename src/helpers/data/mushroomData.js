@@ -1,5 +1,3 @@
-import Basket from "../../components/Basket/Basket";
-
 let basket = [];
 
 /* eslint-disable max-len */
@@ -170,23 +168,27 @@ const getBasket = () => basket;
 
 const getMushrooms = () => mushrooms;
 
+const poisonedMushroom = () => {
+  basket.pop();
+  basket.splice(Math.floor(Math.random() * basket.length), 1);
+};
+
+const deadlyMushroom = () => {
+  basket.length = 0;
+};
+
 const getBasketItems = () => {
   const pickRandomMushroom = mushrooms[Math.floor(Math.random() * mushrooms.length)];
   basket.push(pickRandomMushroom);
   if (pickRandomMushroom.isPoisonous === true) {
+    poisonedMushroom();
     console.error('poison!');
   } else if (pickRandomMushroom.isDeadly === true) {
+    deadlyMushroom();
     console.error('deadly!');
   } else if (pickRandomMushroom.isMagic === true) {
     console.error('magic!');
   }
 };
-
-// const mushroomPickedCases = () => {
-//   const mushroom = getMushrooms();
-//   if (mushroom.isPoisonous === true) {
-//     poisonousMushroom();
-//   }
-// }
 
 export default { getMushrooms, getBasketItems, getBasket };

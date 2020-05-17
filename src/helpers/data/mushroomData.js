@@ -173,6 +173,13 @@ const getMushrooms = () => mushrooms;
 const getBasketItems = () => {
   const pickRandomMushroom = mushrooms[Math.floor(Math.random() * mushrooms.length)];
   basket.push(pickRandomMushroom);
+  if (pickRandomMushroom.isPoisonous === true) {
+    console.error('poison!');
+  } else if (pickRandomMushroom.isDeadly === true) {
+    console.error('deadly!');
+  } else if (pickRandomMushroom.isMagic === true) {
+    console.error('magic!');
+  }
 };
 
 // const mushroomPickedCases = () => {

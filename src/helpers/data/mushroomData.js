@@ -170,11 +170,26 @@ const getMushrooms = () => mushrooms;
 
 const poisonedMushroom = () => {
   basket.pop();
-  basket.splice(Math.floor(Math.random() * basket.length), 1);
+  basket.splice(Math.floor(Math.random() * basket.length), 2);
+  // eslint-disable-next-line no-alert
+  alert('You picked the Poisonous Mushroom! Oh no!');
 };
 
 const deadlyMushroom = () => {
   basket.length = 0;
+  // eslint-disable-next-line no-alert
+  alert('You picked the Deadly Mushroom! You lost!');
+};
+
+const magicMushroom = () => {
+  basket.pop();
+  mushrooms.forEach((mushroom) => {
+    if (mushroom.isDeadly === false && mushroom.isPoisonous === false && mushroom.isMagic === false) {
+      basket.push(mushroom);
+    }
+  })
+  // eslint-disable-next-line no-alert
+  alert('You picked the Magic Mushroom! You Win!');
 };
 
 const getBasketItems = () => {
@@ -182,11 +197,10 @@ const getBasketItems = () => {
   basket.push(pickRandomMushroom);
   if (pickRandomMushroom.isPoisonous === true) {
     poisonedMushroom();
-    console.error('poison!');
   } else if (pickRandomMushroom.isDeadly === true) {
     deadlyMushroom();
-    console.error('deadly!');
   } else if (pickRandomMushroom.isMagic === true) {
+    magicMushroom();
     console.error('magic!');
   }
 };

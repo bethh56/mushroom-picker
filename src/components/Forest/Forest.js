@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './Forest.scss';
 import Mushroom from '../Mushroom/Mushroom';
 
 
@@ -13,7 +13,7 @@ class Forest extends React.Component {
     return (
       <div>
         <h3>FOREST</h3>
-        <div className="d-flex flex-wrap">
+        <div className="forest d-flex flex-wrap justify-content-center">
         {makeMushrooms}
         </div>
       </div>

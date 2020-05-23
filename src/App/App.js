@@ -29,7 +29,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <nav className="navbar navbar-dark bg-dark">
-        <span className="navbar-brand mb-0 h1">MUSHROOM PICKER</span>
+        <h1 className="navbar-brand">MUSHROOM PICKER</h1>
         </nav>
         <button className="btn btn-danger m-3 px-5" onClick={this.pickMushroomEvent}>PICK MUSHROOM</button>
         <div className="row">

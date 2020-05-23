@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Mushroom from '../Mushroom/Mushroom';
+import './Basket.scss';
 
 class Basket extends React.Component {
   render() {
@@ -12,7 +13,7 @@ class Basket extends React.Component {
     return (
       <div>
         <h3>BASKET</h3>
-        <div id="pickedMushroomBasket" className="d-flex flex-wrap">
+        <div id="pickedMushroomBasket" className="pickedMushroomBasket d-flex flex-wrap justify-content-center">
        {addMushrooms}
         </div>
       </div>

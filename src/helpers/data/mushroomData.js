@@ -1,4 +1,4 @@
-let basket = [];
+const basket = [];
 
 /* eslint-disable max-len */
 const mushrooms = [
@@ -37,7 +37,7 @@ const mushrooms = [
   {
     id: 'mushroom5',
     name: 'Autumn Skullcap (Galerina marginata)',
-    imgUrl: 'https://cdn.britannica.com/03/180803-050-11B5EAE5/skullcaps-mushrooms-autumn-skullcap.jpg',
+    imgUrl: 'https://i.pinimg.com/564x/8f/06/d0/8f06d069895ab3decf60e3a4019e5f02.jpg',
     isMagic: false,
     isPoisonous: true,
     isDeadly: false,

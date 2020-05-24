@@ -9,6 +9,7 @@ const mushrooms = [
     isMagic: true,
     isPoisonous: false,
     isDeadly: false,
+    type: 'Magical Mushroom!',
   },
   {
     id: 'mushroom2',
@@ -17,6 +18,7 @@ const mushrooms = [
     isMagic: false,
     isPoisonous: false,
     isDeadly: true,
+    type: 'This one is deadly!',
   },
   {
     id: 'mushroom3',
@@ -25,6 +27,7 @@ const mushrooms = [
     isMagic: false,
     isPoisonous: true,
     isDeadly: false,
+    type: 'This is poisonous!!',
   },
   {
     id: 'mushroom4',
@@ -33,6 +36,7 @@ const mushrooms = [
     isMagic: false,
     isPoisonous: true,
     isDeadly: false,
+    type: 'This is poisonous!!',
   },
   {
     id: 'mushroom5',
@@ -41,6 +45,7 @@ const mushrooms = [
     isMagic: false,
     isPoisonous: true,
     isDeadly: false,
+    type: 'This is poisonous!!',
   },
   {
     id: 'mushroom6',
@@ -49,6 +54,7 @@ const mushrooms = [
     isMagic: false,
     isPoisonous: false,
     isDeadly: false,
+    type: 'A normal mushroom!',
   },
   {
     id: 'mushroom7',
@@ -57,6 +63,7 @@ const mushrooms = [
     isMagic: false,
     isPoisonous: false,
     isDeadly: false,
+    type: 'A normal mushroom!',
   },
   {
     id: 'mushroom8',
@@ -65,6 +72,7 @@ const mushrooms = [
     isMagic: false,
     isPoisonous: false,
     isDeadly: false,
+    type: 'A normal mushroom!',
   },
   {
     id: 'mushroom9',
@@ -73,6 +81,7 @@ const mushrooms = [
     isMagic: false,
     isPoisonous: false,
     isDeadly: false,
+    type: 'A normal mushroom!',
   },
   {
     id: 'mushroom10',
@@ -81,6 +90,7 @@ const mushrooms = [
     isMagic: false,
     isPoisonous: false,
     isDeadly: false,
+    type: 'A normal mushroom!',
   },
   {
     id: 'mushroom11',
@@ -89,6 +99,7 @@ const mushrooms = [
     isMagic: false,
     isPoisonous: false,
     isDeadly: false,
+    type: 'A normal mushroom!',
   },
   {
     id: 'mushroom12',
@@ -97,6 +108,7 @@ const mushrooms = [
     isMagic: false,
     isPoisonous: false,
     isDeadly: false,
+    type: 'A normal mushroom!',
   },
   {
     id: 'mushroom13',
@@ -105,6 +117,7 @@ const mushrooms = [
     isMagic: false,
     isPoisonous: false,
     isDeadly: false,
+    type: 'A normal mushroom!',
   },
   {
     id: 'mushroom14',
@@ -113,6 +126,7 @@ const mushrooms = [
     isMagic: false,
     isPoisonous: false,
     isDeadly: false,
+    type: 'A normal mushroom!',
   },
   {
     id: 'mushroom15',
@@ -121,6 +135,7 @@ const mushrooms = [
     isMagic: false,
     isPoisonous: false,
     isDeadly: false,
+    type: 'A normal mushroom!',
   },
   {
     id: 'mushroom16',
@@ -129,6 +144,7 @@ const mushrooms = [
     isMagic: false,
     isPoisonous: false,
     isDeadly: false,
+    type: 'A normal mushroom!',
   },
   {
     id: 'mushroom17',
@@ -137,6 +153,7 @@ const mushrooms = [
     isMagic: false,
     isPoisonous: false,
     isDeadly: false,
+    type: 'A normal mushroom!',
   },
   {
     id: 'mushroom18',
@@ -145,6 +162,7 @@ const mushrooms = [
     isMagic: false,
     isPoisonous: false,
     isDeadly: false,
+    type: 'A normal mushroom!',
   },
   {
     id: 'mushroom19',
@@ -153,6 +171,7 @@ const mushrooms = [
     isMagic: false,
     isPoisonous: false,
     isDeadly: false,
+    type: 'A normal mushroom!',
   },
   {
     id: 'mushroom20',
@@ -161,6 +180,7 @@ const mushrooms = [
     isMagic: false,
     isPoisonous: false,
     isDeadly: false,
+    type: 'A normal mushroom!',
   },
 ];
 

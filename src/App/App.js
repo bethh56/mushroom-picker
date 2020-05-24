@@ -24,6 +24,10 @@ class App extends React.Component {
     this.setState({ mushrooms, basketItems });
   }
 
+  resetEvent = () => {
+    window.location.reload();
+  }
+
   render() {
     const { mushrooms, basketItems } = this.state;
     return (
@@ -32,6 +36,7 @@ class App extends React.Component {
         <h1 className="navbar-brand">MUSHROOM PICKER</h1>
         </nav>
         <button className="btn btn-danger m-3 px-5" onClick={this.pickMushroomEvent}>PICK MUSHROOM</button>
+        <button className="btn btn-warning m-3 px-5" onClick={this.resetEvent}>RESET GAME</button>
         <div className="row">
         <div className="col-6">
         <Forest mushrooms={mushrooms}/>

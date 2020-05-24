@@ -192,6 +192,11 @@ const magicMushroom = () => {
   alert('You picked the Magic Mushroom! You Win!');
 };
 
+const pickedThemAll = () => {
+  // eslint-disable-next-line no-alert
+  alert('You picked them all! You win!');
+};
+
 const getBasketItems = () => {
   const pickRandomMushroom = mushrooms[Math.floor(Math.random() * mushrooms.length)];
   basket.push(pickRandomMushroom);
@@ -201,7 +206,8 @@ const getBasketItems = () => {
     deadlyMushroom();
   } else if (pickRandomMushroom.isMagic === true) {
     magicMushroom();
-    console.error('magic!');
+  } else if (basket.length > 15) {
+    pickedThemAll();
   }
 };
 

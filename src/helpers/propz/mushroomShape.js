@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-const mushroomShape = PropTypes.Shape({
+const mushroomShape = PropTypes.shape({
   id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   imgUrl: PropTypes.string.isRequired,

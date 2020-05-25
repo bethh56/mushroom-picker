@@ -1,38 +1,32 @@
 .App {
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.basketDiv {
+  border-left: whitesmoke 2px solid;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav {
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+.mushroomImage {
+  height: 60px;
+  width: 50px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.mushroomPickerHeading {
+  margin: 30px;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: rgba(235, 215, 164, 0.637);
+  text-align: center;
+  padding: 20px;
+  border: solid whitesmoke 3px;
+  border-style:  double;
 }

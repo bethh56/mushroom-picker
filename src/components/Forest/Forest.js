@@ -1,9 +1,15 @@
 import React from 'react';
-
+import mushroomShape from '../../helpers/propz/mushroomShape';
+import './Forest.scss';
 import Mushroom from '../Mushroom/Mushroom';
 
 
 class Forest extends React.Component {
+  static propTypes = {
+    mushrooms: mushroomShape.mushroomShape,
+  }
+
+
   render() {
     const { mushrooms } = this.props;
     const makeMushrooms = mushrooms.map((mushroom) => (
@@ -12,8 +18,8 @@ class Forest extends React.Component {
 
     return (
       <div>
-        <h3>FOREST</h3>
-        <div className="d-flex flex-wrap">
+        <h3 className="mb-3">FOREST</h3>
+        <div className="forest d-flex flex-wrap justify-content-center">
         {makeMushrooms}
         </div>
       </div>

@@ -24,19 +24,24 @@ class App extends React.Component {
     this.setState({ mushrooms, basketItems });
   }
 
+  resetEvent = () => {
+    window.location.reload();
+  }
+
   render() {
     const { mushrooms, basketItems } = this.state;
     return (
       <div className="App">
-        <nav className="navbar navbar-dark bg-dark">
-        <span className="navbar-brand mb-0 h1">MUSHROOM PICKER</span>
-        </nav>
-        <button className="btn btn-danger m-2 px-5" onClick={this.pickMushroomEvent}>PICK MUSHROOM</button>
+        <div>
+        <h1 className="mushroomPickerHeading"> <img className="mushroomImage" src="http://pngimg.com/uploads/mushroom/mushroom_PNG3224.png" alt="mushroom"></img> MUSHROOM PICKER</h1>
+        </div>
+        <button className="btn btn-danger m-3 px-5" onClick={this.pickMushroomEvent}>PICK MUSHROOM</button>
+        <button className="btn btn-warning m-3 px-5" onClick={this.resetEvent}>RESET GAME</button>
         <div className="row">
         <div className="col-6">
         <Forest mushrooms={mushrooms}/>
         </div>
-        <div className="col-6">
+        <div className="basketDiv col-6">
         <Basket basketItems={basketItems}/>
         </div>
       </div>

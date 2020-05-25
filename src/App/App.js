@@ -32,9 +32,9 @@ class App extends React.Component {
     const { mushrooms, basketItems } = this.state;
     return (
       <div className="App">
-        <nav className="navbar navbar-dark bg-dark">
-        <h1 className="navbar-brand">MUSHROOM PICKER</h1>
-        </nav>
+        <div>
+        <h1 className="mushroomPickerHeading"> <img className="mushroomImage" src="http://pngimg.com/uploads/mushroom/mushroom_PNG3224.png" alt="mushroom"></img> MUSHROOM PICKER</h1>
+        </div>
         <button className="btn btn-danger m-3 px-5" onClick={this.pickMushroomEvent}>PICK MUSHROOM</button>
         <button className="btn btn-warning m-3 px-5" onClick={this.resetEvent}>RESET GAME</button>
         <div className="row">

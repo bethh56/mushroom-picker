@@ -207,7 +207,7 @@ const magicMushroom = () => {
     if (mushroom.isDeadly === false && mushroom.isPoisonous === false && mushroom.isMagic === false) {
       basket.push(mushroom);
     }
-  })
+  });
   // eslint-disable-next-line no-alert
   alert('You picked the Magic Mushroom! You Win!');
 };
@@ -226,7 +226,7 @@ const getBasketItems = () => {
     deadlyMushroom();
   } else if (pickRandomMushroom.isMagic === true) {
     magicMushroom();
-  } else if (basket.length > 15) {
+  } else if (basket.length >= 15) {
     pickedThemAll();
   }
 };
